@@ -10,23 +10,23 @@ const Navbar = () => {
                 C | T
             </NavLink>
 
-            <ul>
-                <li>
+            <ul className={classes.navbar__menu}>
+                <li className={classes.navbar__item}>
             <NavLink exact to="/about" className={classes.navbar__navlinks}>
                 About
             </NavLink>
             </li>
-            <li>
+            <li className={classes.navbar__item}>
             <NavLink exact to="/interior" className={classes.navbar__navlinks}>
                 Interior Designs
             </NavLink>
             </li>
-            <li>
+            <li className={classes.navbar__item}>
             <NavLink exact to="/exterior" className={classes.navbar__navlinks}>
                 Exterior
             </NavLink>
             </li>
-            <li>
+            <li className={classes.navbar__item}>
             <NavLink exact to="/contact" className={classes.navbar__navlinks}>
                 Contact Us
             </NavLink>
