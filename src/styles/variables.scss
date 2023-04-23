@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+
+$Roboto:"Roboto",sans-serif;
+
+$dark:rgb(29,29,29);
+$width:768px;
+$light:#fff;
+$primary:rgb(162,162,162);
+$bg:rgb(244,244,255);
+
+$spacing-md:16px;
+$spacing-lg:32px;
+
+$borderRadius:12px;
+
+$headerHeight:100px;
+
+@mixin breakpoint($point){
+    @if $point ==md{
+        //768px
+        @media(min-width: 48em){
+            @content;
+        }
+    }
+}
+@mixin mobile{
+    @media (max-width:#{$width}){
+        @content
+    }
+}
